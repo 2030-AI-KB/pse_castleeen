@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>~오늘의 회원가입~</title>
+    
+</head>
+
+<body>
+    <h1 style="font-size: 200%; text-align: center;">
+    예제 :: input폼을 이용하여 회원가입 폼만들기
+    </h1>
+    <div>
+        <p>
+            <h2>회원가입 페이지에 오신 걸 환영합니다!</h2>
+            <h5>아래의 정보를 입력해주시길 바랍니다.</h5>
+            <br>
+            <form>
+                <label>이름 :: </label>
+                <input type="text" id="name" name="name" 
+                    >   <br>
+
+                <label>영문 이름 ::</label>
+                <input type="text" id="name_en" name="name_en"
+                    > <br>
+
+                <label>성별 :: </label>
+                <form>
+                    <input type="radio" id="gender" name="gender" value="male">
+                    <label for="male">남성</label>
+                    <input type="radio" id="gender" name="gender" value="female">
+                    <label for="female">여성</label>
+                    <input type="radio" id="gender" name="gender" value="etc">
+                    <label for="etc">기타</label>
+                </form>
+
+                <label>주민등록번호 ::</label>
+                <input type="text" id="first_num" name="first_num"> -
+                <input type="text" id="second_num" name="second_num">
+                <button>본인인증</button>
+                <br>
+
+                <label>생일 </label>
+                <input type="date" id="birth" name="birth">
+                <br>
+
+                <label>휴대폰 </label>
+                <select id="first_tel" >
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="012">012</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                </select> -
+                <input type="text" id="sec_tel" style="width:50px;"> - 
+                <input type="text" id="thi_tel" style="width:50px;">    <br>
+
+                <label>집 전화 </label>
+                <input type="text" id="first_home" style="width:30px;"> -
+                <input type="text" id="sec_home" style="width:50px;"> - 
+                <input type="text" id="thi_home" style="width:50px;">    <br>
+                <label for="email">이메일</label>
+                <input type="text" id="first_email" name="first_email" >@
+                <!-- id :: 접근할 시 사용할 이름, name :: 실질적인 변수 이름-->
+                <select id="sec_email" name="sec_email">
+                    <option value="naver">naver.com</option> <!--선택할 시, naver라는 값 가짐-->
+                    <option value="daum">daum.net</option> <!--선택할 시, daum라는 값 가짐-->
+                    <option value="gmail">gmail.com</option> <!--선택할 시, gmail라는 값 가짐-->
+                    <option value="hanmail">hanmail.com</option> <!--선택할 시 , hanmail라는 값 가짐-->
+                </select>
+                <input type="radio" id="yes" name="send_mail" value="yes">
+                <label for="yes">수신 동의</label>
+                <input type="radio" id="no" name="send_mail" value="no">
+                <label for="no">비동의</label>
+                <br>
+
+                <label for="use">개인정보 유효기간</label>
+
+<input type="radio" id="six_month" name="use" value="six_month">
+<label for="six_month">6개월</label>
+<input type="radio" id="one_year" name="use" value="one_year">
+<label for="one_year">1년</label>
+<input type="radio" id="three_month" name="use" value="the_end">
+<label for="the_end">탈퇴 시 종료</label>
+<br>
+<br>
+<hr>
+<div>
+<h5>아이디 및 패스워드 설정</h5>
+<label>ID ::</label>
+<input type="text">
+<button>중복확인</button><br>
+
+<label>패스워드 ::</label>
+<input type="password">
+<button>확인</button>
+
+            </form>
+        </p>
+    </div>
+</div>
+</body>
+</html>

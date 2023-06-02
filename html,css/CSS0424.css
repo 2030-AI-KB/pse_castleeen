@@ -1,0 +1,35 @@
+/* css 파일 주석 */
+/* 인라인 스타일 :: 각 태그의 style 속성 통해서 작성 */
+/* <p style="font-size:20px;"></p> */
+/* 내부 css :: html 파일의 head 태그 -style 태그 넣어서 작성 */
+/* 외부 css :: css 파일 별도로 작성 & html 파일에 포함  */
+
+/* 선택자 {
+ 속성명1: 속성값1;
+ 속성명2: 속성값2;
+ ...
+} */
+
+/* css 박스모델 */
+/* 1. 크기 단위 :: px, %, em(배수 단위)*/
+  /* 크기 속성 :: width(너비), height(높이), max-width, max-height, min-width, min-height */
+/* 2. 패딩(padding), 마진(margin), 테두리(border) */
+/* 패딩이랑 마진은 여백을 주는 속성 */
+/* 패딩 :: 테두리(border)랑 내용(content)간의 여백을 주는 속성 (백그라운드 색상 지정시 영향 받음) */
+/* 마진 :: 테두리(border)랑 외부의 요소 간의 여백을 주는 속성 */
+/* top: 위쪽, bottom: 아래쪽, left: 왼쪽, right: 오른쪽*/
+/* 3. 아웃라인(outline-style, outline-color) :: 테두리 바깥을 꾸며주는 역할 */
+
+body {
+    background-color: beige;
+}
+p{
+  width: 50%;
+  border: 10px solid ;color: darkblue; 
+  padding-top: 20px ;
+  padding-left: 15px ;
+  margin-left: 50px;
+  background-color: azure;
+  outline-style: dashed;
+  outline-color: darkred;  
+}

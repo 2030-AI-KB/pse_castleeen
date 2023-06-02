@@ -1,0 +1,48 @@
+/* body {
+    background-color: beige;
+}
+p{
+  width: 50%;
+  border: 10px solid ;color: darkblue; 
+  padding-top: 20px ;
+  padding-left: 15px ;
+  margin-left: 50px;
+  background-color: azure;
+  outline-style: dashed;
+  outline-color: darkred;  
+} */
+/* 태그 선택자, id 선택자, class 선택자 */
+
+/* id 선택자(#) */
+/* 선택자(스타일 적용하고자 하는 id명){ */
+    /* 속성명: 속성값 } */
+
+    /* (태그명 생략시, id명 같은 모든 태그에 적용된다.) */
+   #change_blue{
+    color: blue;
+   } 
+
+   /* 클래스 선택자 */
+   /* 선택자 (태그명.클래스명){ 속성명 : 속성값; */
+    /* 태그명 생략시 class명 같은 모든 태그에 적용된다. */
+   p.comment{
+        outline-style: solid;
+        outline-color: cornflowerblue;
+    }
+    /* 전체 선택자 */
+    *{
+        font-size: 20px;
+    }
+
+    /* 자손 선택자 */
+    /* 태그명 1 태그명 { 속성명: 속성값 ...} */
+/* 태그명1 안에 있는 태그명2에대한 스타일을 지정하였다. */
+    div p{
+        background-color: aquamarine;
+    }
+    /* 자식 선택자  */
+    /* 태그명1> 태그명2{ 속성명 : 속성값 ..} */
+
+    div>p{
+        color:crimson;
+    }
